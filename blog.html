@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechEduca</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/bg.png" type="image/png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <nav>
+        <img src="Images/logo.svg" alt="logo laga hua hai">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="Images/menu.png" alt="">
+        </div>
+    </nav>
+
+    <!--Home-->
+
+    <section id="about-home">
+        <h2>Blog</h2>
+    </section>
+
+    <section id="blog-container">
+        <div class="blogs">
+            <div class="post">
+                <img src="Images/b1.jpg" alt="">
+                <h3>Learn Web Development In The Easiest Way</h3>
+                <p><strong>Now, get coding! Experiment by building simple web pages with HTML and CSS. Breathe life into
+                        them with animations and interactivity using JavaScript. Numerous online challenges provide a
+                        fun way to practice and refine your skills.
+                        Next, delve into the code behind existing websites. Use your browser's developer tools to peek
+                        under the hood and see how HTML, CSS, and JavaScript work together. This hands-on exploration
+                        will solidify your understanding.</strong></p>
+                <a href="post.html">Read More</a>
+            </div>
+            <div class="post">
+                <img src="Images/b2.jpg" alt="">
+                <h3>Learn Andriod Development In The Easiest Way</h3>
+                <p><strong>The foundation lies in mastering two key languages: Java (or Kotlin, the preferred choice
+                        nowadays) and XML. Java handles the logic and functionality of your app, while XML defines the
+                        layout and structure. </strong></p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="post">
+                <img src="Images/b3.jpg" alt="">
+                <h3>Learn App Development In The Easiest Way</h3>
+                <p><strong>The adventure begins with mastering the fundamentals. For native mobile apps, you'll need to
+                        choose a platform - Android or iOS. Android development typically uses Java (or the more popular
+                        Kotlin) for logic and functionality, while iOS development utilizes Swift.
+                    </strong></p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="post">
+                <img src="Images/b4.png" alt="">
+                <h3>Learn Front-End Development In The Easiest Way</h3>
+                <p><strong>Remember, front-end development is a continuous learning journey. New technologies and
+                        frameworks like React or Angular are constantly emerging, allowing you to build even more
+                        complex and dynamic web experiences. Stay curious, keep exploring and practicing, and with
+                        dedication, you can transform your passion for creating beautiful and interactive websites into
+                        a rewarding career.</strong></p>
+                <a href="#">Read More</a>
+            </div>
+
+        </div>
+
+        <div class="cate">
+            <h2>Categories</h2>
+            <hr>
+            <a href="#">Web Development</a>
+            <hr>
+            <a href="#">Web Design</a>
+            <hr>
+            <a href="#">Andriod Development</a>
+            <hr>
+            <a href="#">App Development</a>
+            <hr>
+            <a href="#">Front-End Development</a>
+            <hr>
+            <a href="#">Python Programming</a>
+        </div>
+    </section>
+
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Websites</li>
+            <li>Marketing Services</li>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <li>Jobs</li>
+            <li>Brand Assets</li>
+            <li>Investors Relations</li>
+            <li>Term Of Services</li>
+        </div>
+        <div class="footer-col">
+            <h3>Features</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Websites</li>
+            <li>Marketing Services</li>
+        </div>
+        <div class="footer-col">
+            <h3>Resources</h3>
+            <li>Guide</li>
+            <li>Research</li>
+            <li>Experts</li>
+            <li>Marketing Services</li>
+        </div>
+
+        <div class="footer-col">
+            <h3>NewsLetter</h3>
+            <p><strong>You can trust us. We only send promo offers,</strong></p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your E-Mail Address">
+                <a href="#" class="yellow">SUBSCRIBE</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p><strong>Copyright ©2024 All rights resevered | This template is madeby Bittu (Please don't copy)</strong>
+            </p>
+            <div class="pro-links">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+        </div>
+    </footer>
+
+    <!--Javascript for menu bar-->
+    <script>
+        $('menu-close').click(function () {
+            $('nav .navigation ul').addClass('active')
+        });
+        $('menu-close').click(function () {
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
+
+</body>
+
+</html>
